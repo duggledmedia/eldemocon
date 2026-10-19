@@ -35,3 +35,15 @@
 @keyframes ritual-glow{from{opacity:.65}to{opacity:1}}
 @media(max-width:600px){.ritual-overlay{padding:12px}.ritual-loading{min-height:360px}.ritual-canvas{height:270px}.ritual-verdict,.ritual-failure{padding:70px 42px 58px}.ritual-close{right:18px;top:16px}}
 @media(prefers-reduced-motion:reduce){.ritual-overlay,.ritual-verdict,.ritual-fallback,.ritual-status{animation:none!important}}
+
+
+/* Variante Infernal: papelería rayada sin alterar fondos PNG ni geometría. */
+.paper-top{border-bottom:2px solid #a13b31;box-shadow:0 3px 0 -2px rgba(130,43,35,.25)}
+.paper textarea{line-height:28px;min-height:112px;padding:5px 4px 0;background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 26px,rgba(105,141,105,.30) 27px,transparent 28px);background-size:100% 28px;background-attachment:local;border-bottom:0}
+.cases .case-content{background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 27px,rgba(105,141,105,.17) 28px,transparent 29px);background-size:100% 29px;padding-bottom:10px}
+.cases .case-content small{display:block;border-bottom:2px solid rgba(158,50,42,.66);padding-bottom:11px;margin-bottom:14px}
+.cases .case-content h3{line-height:29px}
+.cases .case-content p{line-height:29px}
+.ritual-document{display:block;border-bottom:2px solid rgba(159,48,38,.76);padding-bottom:14px}
+.ritual-question,.ritual-answer{background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 29px,rgba(99,140,106,.25) 30px,transparent 31px);background-size:100% 31px;line-height:31px}
+.ritual-rule{background:#a13b31;opacity:.85;height:2px}
