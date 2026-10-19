@@ -3,5 +3,11 @@
   "name": "el-demonio-ia",
   "main": "worker/index.js",
   "compatibility_date": "2026-10-19",
-  "workers_dev": true
+  "workers_dev": true,
+  "keep_vars": true,
+  "secrets": {
+    "required": [
+      "GEMINI_API_KEY"
+    ]
+  }
 }
