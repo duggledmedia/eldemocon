@@ -47,3 +47,22 @@
 .ritual-document{display:block;border-bottom:2px solid rgba(159,48,38,.76);padding-bottom:14px}
 .ritual-question,.ritual-answer{background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 29px,rgba(99,140,106,.25) 30px,transparent 31px);background-size:100% 31px;line-height:31px}
 .ritual-rule{background:#a13b31;opacity:.85;height:2px}
+
+
+/* Corrección: renglones visibles sobre TODA la superficie interior del papel, no solo bajo texto. */
+.paper::before,.cases article::before,.ritual-verdict::before{
+ content:"";position:absolute;pointer-events:none;z-index:0;
+ background:repeating-linear-gradient(to bottom,transparent 0px,transparent 27px,rgba(88,129,99,.48) 28px,transparent 29px);
+ background-size:100% 29px;
+}
+.paper::before{top:148px;bottom:57px;left:11%;right:11%}
+.cases article::before{top:91px;bottom:40px;left:9%;right:9%;opacity:.65}
+.ritual-verdict::before{top:143px;bottom:53px;left:9%;right:9%;opacity:.8}
+.paper-content,.cases .case-content,.ritual-verdict>*{position:relative;z-index:1}
+.ritual-verdict>.ritual-close{position:absolute;z-index:3}
+.paper textarea,.cases .case-content,.ritual-question,.ritual-answer{background-image:none}
+@media(max-width:700px){
+ .paper::before{top:155px;bottom:65px;left:9%;right:9%}
+ .cases article::before{top:95px;bottom:40px;left:11%;right:11%}
+ .ritual-verdict::before{top:149px;bottom:55px;left:10%;right:10%}
+}
