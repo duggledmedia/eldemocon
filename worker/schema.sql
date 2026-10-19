@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS sentencias (id INTEGER PRIMARY KEY AUTOINCREMENT, pregunta TEXT NOT NULL, respuesta TEXT NOT NULL, estado TEXT NOT NULL DEFAULT 'pendiente', creada_en TEXT DEFAULT CURRENT_TIMESTAMP);
+CREATE INDEX IF NOT EXISTS idx_sentencias_estado ON sentencias(estado, id DESC);
