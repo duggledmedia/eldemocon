@@ -1,0 +1,7 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "el-demonio-ia",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-18",
+  "workers_dev": true
+}
