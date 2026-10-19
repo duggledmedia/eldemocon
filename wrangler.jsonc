@@ -4,6 +4,12 @@
   "main": "worker/index.js",
   "compatibility_date": "2026-10-19",
   "workers_dev": true,
-  "keep_vars": true
+  "keep_vars": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "eldemonio-db",
+      "database_id": "5ec59a1c-3381-4f81-b64d-fb0fb4dba2fb"
+    }
+  ]
 }
-
